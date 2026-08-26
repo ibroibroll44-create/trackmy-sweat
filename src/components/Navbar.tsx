@@ -88,14 +88,7 @@ export function Navbar() {
                 Logout
               </button>
             </>
-          ) : (
-            <Link
-              to="/register"
-              className="hidden rounded-lg bg-brand px-3.5 py-2 text-sm font-semibold text-brand-foreground transition hover:brightness-110 md:block"
-            >
-              Get started
-            </Link>
-          )}
+          ) : null}
 
           <button
             onClick={() => setOpen((v) => !v)}
