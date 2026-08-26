@@ -21,7 +21,7 @@ export function useSession() {
   }, []);
 
   const email = session?.user.email ?? "";
-  const name = email ? email.split("@")[0] : "Athlete";
+  const name = email ? (email.split("@")[0] ?? "Athlete") : "Athlete";
 
   return { session, loading, email, name };
 }
